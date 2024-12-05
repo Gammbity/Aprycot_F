@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+}
+
+.main_burger {
+  width: 200px;
+  height: 281px;
+  position: absolute;
+  bottom: -920px;
+  right: 0px;
+  background-image: url("../img/Burger\ image_lst.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section1 {
+  width: 7.5%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.section1 > div > .icon_left:hover {
+  transition:  0.4s ;
+  transform: scale(1.5);
+}
+
+.main_icon > img {
+  width: 120px;
+  height: 77px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icons > img {
+  width: 40px;
+  height: 40px;
+}
+
+.section2 {
+  width: 100%;
+  background-color: #ea6a124d;
+}
+
+header {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background-color: #fff;
+  width: 100%;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 294px;
+  height: 44px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin-left: 40px;
+}
+
+nav > div {
+  margin: 0 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav > div > img {
+  width: 24px;
+  height: 24px;
+}
+
+nav > div > .icon_nav:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.5);
+}
+
+.man_icon {
+  width: 55px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.main {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 60%;
+  padding-left: 100px;
+  background-image: url("../img/Full\ menu.png");
+  border-radius: 24px;
+}
+
+.menu > span {
+  color: #ea6a12;
+}
+
+.menu > p > span {
+  color: #ea6a12;
+}
+
+.menu > button {
+  width: 150px;
+  height: 49px;
+  background-color: #ea6a12;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu > button:hover {
+  background-color: green;
+  transition: all 0.4s ease;
+}
+
+.burger {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.burger > div {
+  border-radius: 24px;
+}
+
+.main2 {
+  display: flex;
+}
+
+.main > .burger > div {
+  position: absolute;
+  top: 40px;
+  width: 500px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 220px;
+  gap: 10px;
+  background-color: #ffffff66;
+}
+
+.burger > img {
+  position: absolute;
+  top: -30px;
+  width: 430px;
+  z-index: 1;
+}
+
+.article1 {
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 58.5%;
+}
+
+.article1 > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article1 > div > div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_category > div > div {
+  width: 20px;
+  height: 20px;
+  background-color: #ea6a12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.menu_category > div > div > svg > path {
+  stroke: #fff;
+}
+
+.snacks {
+  display: flex;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: 40px;
+  gap: 30px;
+}
+
+.snacks > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 10px;
+  background-color: #fff;
+  border-radius: 24px;
+  gap: 35px;
+  transition: all 0.3s ease;
+}
+
+.snacks > div > hr {
+  width: 50px;
+}
+
+.snacks > div > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ea6a12;
+  transition: all 0.3s ease;
+}
+
+.snacks > div:hover {
+  background-color: #ea6a12;
+  color: #fff;
+}
+
+.snacks > div:hover > hr {
+  color: #fff;
+}
+
+.snacks > div:hover > div {
+  background-color: #fff;
+}
+
+.snacks > div > div > svg > path {
+  transition: all 0.3s ease;
+}
+.snacks > div:hover > div > svg > path {
+  stroke: #ea6a12 !important;
+}
+
+.article2 {
+  width: 100%;
+}
+
+.cart {
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  margin: 45px 0 0 40px;
+  background-color: #fff;
+  border-radius: 24px;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.cart > span {
+  padding: 20px 0 0 15px;
+  font-size: 20px;
+}
+
+.cart > hr {
+  width: 90%;
+  margin: auto;
+}
+
+.cart_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cart_menu > div {
+  height: 80px;
+  width: 90%;
+  margin: auto;
+  background-color: bisque;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.cart_menu > div > img {
+  width: 116px;
+  height: 116px;
+}
+
+.name {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart > button {
+  width: 110px;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ea6a12;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  margin: auto;
+}
+
+.snacks2 {
+  width: 60%;
+  display: flex;
+  gap: 10px;
+}
+
+.snacks2 > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.snacks2 > div > img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -240px;
+}
+
+.snacks2 > div > div {
+  width: 200px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 100px;
+  border-radius: 24px;
+  gap: 15px;
+  padding-top: 100px;
+  padding-left: 10%;
+}
+
+.snacks2 > div:hover > div {
+  background-color: #ea6a12;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.snacks2 > div > div > img {
+  width: 90px;
+}
+
+.snacks2 > div > div > div {
+  display: flex;
+  padding-bottom: 10px;
+  gap: 5px;
+}
+
+.svg_price > svg {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.snacks2 > div:hover > div > .svg_price > svg > rect {
+  fill: #fff;
+}
+
+.snacks2 > div:hover > div > .svg_price > svg > .plus {
+  fill: #ea6a12;
+}
+
+.snacks2 > div:hover > div > div > svg > path {
+  fill: #fff;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.main_trading {
+  width: 65%;
+}
+
+.treding_orders {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.treding_orders > div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.treding_orders > div > div {
+  width: 20px;
+  height: 20px;
+  background-color: #ea6a12;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders_list1 {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40px;
+  gap: 80px;
+}
+
+.orders_list1 > div > div > hr {
+  width: 30px;
+  color: grey;
+}
+
+.orders_list1 > div {
+  width: 25%;
+  background-color: #fff;
+  display: flex;
+  border-radius: 24px;
+}
+
+.orders_list1 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0 20px 20px;
+  position: relative;
+}
+
+.top {
+  color: yellow;
+}
+
+.grey {
+  color: grey;
+}
+
+.orders_list1 > div > div > img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 20px;
+}
+
+.orders_list1 > div > div > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.orders_list1 > div:hover {
+  background-color: #ea6a12;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.orders_list1 > div:hover > div > div > svg > rect,
+.orders_list1 > div:hover > div > span {
+  fill: #fff;
+  color: #fff;
+}
+
+.orders_list1 > div:hover > div > div > svg > .plus {
+  fill: #ea6a12;
+}
+
+.categories {
+  width: 37%;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  background:rgba(255, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.categories > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat_hr {
+  margin-top: 20px;
+  color: grey;
+}
+
+.categories > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.categories > div > div > div {
+  width: 20px;
+  height: 20px;
+  background-color: #ea6a12;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttons > div {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.buttons > div > button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #ea6a12;
+  border: #ea6a12;
+  border-radius: 24px;
+}
+
+.buttons > div > button:hover {
+  background-color:#ea6a12;
+  color: #fff;
+  border: #fff;
+  transition: all .4s ease;
+}
